@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.board {
+  max-height: min(90vh);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  background-color: black;
+  grid-gap: 4px;
+}
+
+.board > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  aspect-ratio: 1/1;
+  font-size: 42px;
+}
