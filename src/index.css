@@ -5,16 +5,15 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .board {
-  max-height: min(90vh);
+  width: min(70vw, 70vh);
+  aspect-ratio: 1/1;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  justify-items: stretch;
-  align-items: center;
   background-color: black;
   grid-gap: 4px;
 }
@@ -24,6 +23,5 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: white;
-  aspect-ratio: 1/1;
-  font-size: 42px;
+  font-size: 2rem;
 }
